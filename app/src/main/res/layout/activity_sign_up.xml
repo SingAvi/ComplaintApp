@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_circle"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_margin="50dp"
+        android:elevation="5dp"
+        android:id="@+id/cardview"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#192375"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your details"
+                android:textColor="#4652BB"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name1st"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/createAccountTxt"
+                android:layout_marginTop="50dp"
+                android:hint="Name"
+                android:textColor="#000000"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email2nd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@+id/name1st">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_name"
+
+                android:hint="Email"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phone3rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@+id/email2nd">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_email"
+
+                android:hint="Phone"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/age4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@+id/phone3rd">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_phone"
+
+
+                android:hint="Age"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/pass4"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age4">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_age"
+
+                android:hint="Password"
+
+                android:textColor="#161616"
+                android:textColorHint="#FFFFFF" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/confpass4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_below="@+id/pass4">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_confirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_password"
+                android:hint="Confirm Password"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF" />
+        </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_marginLeft="70dp"
+        android:textColor="#fff"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/simple_boarding_button"
+        android:text="SIGN UP" />
+
+    <TextView
+        android:id="@+id/loginAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Already have an account ? Login"
+        android:textColor="#646262" />
+
+
+</RelativeLayout>

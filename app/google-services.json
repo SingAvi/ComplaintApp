@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "719788438865",
+    "firebase_url": "https://complaintapp-f3b0b.firebaseio.com",
+    "project_id": "complaintapp-f3b0b",
+    "storage_bucket": "complaintapp-f3b0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719788438865:android:f3601e76b35ea9bf",
+        "android_client_info": {
+          "package_name": "in.SingAvi.complaintapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "719788438865-boh2620rooaujgr5utp58udqf5n5hfur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcLVZrlFIE3LryFr5eABRjVkerpGokVMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

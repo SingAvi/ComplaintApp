@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ComplaintApp</string>
+
+    <string-array name="Department">
+        <item>Choose Department</item>
+        <item>Water</item>
+        <item>Electricity</item>
+        <item>Computer</item>
+        <item>EnTC</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>Security</item>
+    </string-array>
+</resources>

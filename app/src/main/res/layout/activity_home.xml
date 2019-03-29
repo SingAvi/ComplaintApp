@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@drawable/bg_circle">
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_weight="2.8"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="40dp"
+              android:src="@drawable/pen"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="45dp"
+              android:textSize="28dp"
+              android:fontFamily="sans-serif"
+              android:textColor="#192375"
+              android:text="Complaint Box"/>
+      </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/signOut"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/exit"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/User"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textSize="28dp"
+        android:id="@+id/helloUser"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#192375"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home "
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/helloUser"
+        android:textColor="#4652BB"
+        />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:id="@+id/details"
+
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:transitionName="Complain"
+            android:id="@+id/addComplaint"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_add_circle_outline_black_24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complain"
+               android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inform Us about any problem or complain you are facing in the premises."
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+
+                android:textColor="#797777"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/complaintHistory"
+            android:transitionName="ComplainHis"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_format_align_left_black_24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complain History"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Complain / Problem Histroy. Keep a track of it"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:textColor="#797777"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/profilePage"
+            android:transitionName="Profile"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Have a look at your profile "
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="#797777"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
